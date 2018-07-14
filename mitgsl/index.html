@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>mitgsl</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="artCss/styleArtsansar.css">
+  <style>
+  
+   header{
+    background-color: #9932CC;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-color: white;
+    padding-left: 20px;
+    padding: 5px;
+
+  }
+  h3{
+
+   font-family: sans-serif;
+   font-size: 15px;
+   padding-left: 90px;
+   padding-bottom: 0px;
+   color: #fdfefe;
+
+
+ }
+ .navbar {
+  background-color:#9932CC;
+  padding-top: 0px;
+  margin-bottom: 0;
+  border-radius: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #9932CC ;
+  padding: 25px;
+}
+
+.image-gallery{
+  display: block;
+  padding: 20px;
+  position: relative;
+  vertical-align: center;
+  height: 250px;
+}
+
+.img-responsive.thumbnail{
+  height: 35vh;
+  width: 100%;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background:   #f5eef8  ;
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 85%;
+  transition: .5s ease;
+  opacity:0;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 0.65;
+}
+</style>
+</head>
+<body>
+
+  <header class="row">
+    <div class="col-md-4">
+      <h3>   </h3>
+    </div>
+
+    <div class= "col-md-8">
+      <form action="/hms/accommodations" method="GET"> 
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search here..." id="txtSearch"/>
+              <div class="input-group-btn">
+                <button class="btn btn-primary" type="submit">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+  </header>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="artist.html">Artists</a></li>
+          <li><a href="">Category</a></li> 
+
+          <li><a href="customizeart.html">Customize Art</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-sign-up"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="c.jpg" style="width:75%">
+            </div>
+
+            <div class="item">
+              <img src="b.jpg" style="width:75%">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="container-fluid">
+        <p1> Artists of the Week </p1>
+        <div class="row1">
+          <img src="sakshi.jpg" style="width: 100%" >
+          <p1> sakshi shrestha </p1>
+          <br>
+          <p2> KU </p2>
+        </div>
+
+      </div>  
+    </div>
+</div>
+ 
+
+ <div class="container">
+  <div>
+    <h1> Top Arts </h1>
+  </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <span class="image-gallery">
+            <img src="img1.jpeg" class="img-responsive thumbnail"  >
+            <div class="overlay">Bloom art</div>
+          </span>
+        </div>
+        <div class="col-sm-3"> 
+         <span class="image-gallery">     
+          <img src="img2.jpeg" class="img-responsive thumbnail"  >
+          <div class="overlay">spiral art</div>
+        </span>
+      </div>
+      <div class="col-sm-3"> 
+        <span class="image-gallery">
+          <img src="img3.jpeg" class="img-responsive thumbnail"  >
+
+
+
+
+
+          <div class="overlay">krishan radha</div>
+        </span>
+      </div>
+      <div class="col-sm-3">
+        <span class="image-gallery">
+          <img src="img4.jpeg" class="img-responsive thumbnail"  >
+
+
+
+
+          <div class="overlay">floral art</div>
+        </span>
+      </div>
+
+
+      <div class="col-sm-3">
+        <span class="image-gallery">
+          <img src="img5.jpeg" class="img-responsive thumbnail"  alt="Image">
+
+
+
+          <div class="overlay">design</div>
+        </span>
+      </div>
+      <div class="col-sm-3"> 
+        <span class="image-gallery">
+          <img src="img6.jpeg" class="img-responsive thumbnail"  >
+
+
+          <div class="overlay">oil art </div>
+        </span>
+      </div>
+      <div class="col-sm-3"> 
+        <span class="image-gallery">
+          <img src="img1.jpeg" class="img-responsive thumbnail"  >
+
+          <div class="overlay">bloom art</div>
+        </span>
+      </div>
+      <div class="col-sm-3">
+        <span class="image-gallery">
+          <img src="img2.jpeg" class="img-responsive thumbnail"  ></span>
+          <div class="overlay">spiral art</div>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+</body>
+<footer class="container-fluid text-center">
+  <p> Art Sansar </p>
+</footer> 
+
+</html>
