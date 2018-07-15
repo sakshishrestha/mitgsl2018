@@ -9,6 +9,121 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+
+/*ownnn*/
+  /* Remove the navbar's default margin-bottom and rounded borders */ 
+
+  header{
+    background-color: #0c2499;/* blue color*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-color: white;
+    color: white;
+    padding-left: 20px;
+    padding: 5px;
+
+  }
+  h3{
+
+   font-family: sans-serif;
+   font-size: 15px;
+   padding-left: 90px;
+   padding-bottom: 0px;
+   color: #fdfefe;
+
+
+ }
+ .navbar {
+  /*background-color:#9932CC;*/
+  padding-top: 0px;
+  margin-bottom: 0;
+  border-radius: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color:  #0c2499;
+  padding: 25px;
+  color:white;
+}
+
+.image-gallery{
+  display: block;
+  padding: 20px;
+  position: relative;
+  vertical-align: center;
+  height: 250px;
+}
+
+.img-responsive.thumbnail{
+  height: 30vh;
+  width: 100%;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background:   #f5eef8  ;
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 85%;
+  transition: .5s ease;
+  opacity:0;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 0.75;
+}
+
+
+.user-logo{
+  float: right;
+  display: inline-flex;
+  font-family: sans-serif;
+  color:white;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
+own close
+*/
+
+
+
+
+
+
+
 body {
   margin: 0;
 }
@@ -3559,7 +3674,7 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #333;
+  color: #337ab7; /*blue*/
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
@@ -3990,10 +4105,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
   padding: 10px 15px;
 }
+
+
+#noeffect > a:hover {
+    background-color: transparent;
+}
+
+/* above no effect hover*/
+
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eee;
+  background-color:#eee;
 }
 .nav > li.disabled > a {
   color: #777;
