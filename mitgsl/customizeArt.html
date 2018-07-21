@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 
+	 <title>Customize Art Request | Art Sansar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="artCss/styleArtsansar.css">
+  <link rel="stylesheet" type="text/css" href="/style/artistofweek.css"> <!-- for artistof week css -->
+  <link rel="stylesheet" type="text/css" href="artistWeek.css">
+
+
+
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+	<link rel="stylesheet" type="text/css" href="customizeArt.css">
+	<script type="text/javascript" src="customizeArt.js"></script>
+</head>
+ <header class="row">
+
+    <div class="col-md-4">
+      <h3> Art Sansar</h3>
+    </div>
+<!-- above search right side -->
+
+
+    <div class= "col-md-4">
+      <form action="/hms/accommodations" method="GET"> 
+        <div class="row">
+         <!--  <div class="col-xs-12 col-md-4"> -->
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search here.." id="txtSearch"/>
+              <div class="input-group-btn">
+                <button class="btn btn-primary" type="submit">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div>
+            </div>
+         <!--  </div> -->
+        </div>
+      </form>
+    </div>
+<!--     above search box -->
+
+
+
+  <div class= "col-md-4 " >
+
+  <ul class= "nav navbar-nav  navbar-right" >
+    
+        <li id="noeffect"> <a href="#" style="color:white"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li id="noeffect"><a href="#" style="color:white"><span class="glyphicon glyphicon-sign-up"></span> Sign Up</a></li>
+        <li id="noeffect"><a href="cart.html" style="color:white"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+</ul>
+        </div>
+
+ </header>
+
+
+ <!-- Start Header Navigation -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <!-- <a class="navbar-brand" href="#brand"><img src="#" class="logo" alt=""></a >-->
+        </div>
+        <!-- End Header Navigation -->
+
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="home.html">Home</a></li>                    
+                <li><a href="artist.html">Artist</a></li>
+
+
+                    <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Catagories <b class="caret"></b></a>
+
+                    <ul class="dropdown-menu" >
+                        <li><a href="painting.html" >Painting</a></li>
+                        <li><a href="sketching.html">Sketching</a></li>
+                        <li><a href="papercrafts.html">Paper Crafts</a></li>
+                    </ul>
+                </li>
+                <li><a href="customizeArt.html">Customized Art</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+
+
+
+        </div><!-- /.navbar-collapse -->
+    </div>   
+
+
+
+
+
+</nav>
+
+
+
+<body>
+<div class="container">
+	<P>CUSTOMIZE ART </P>
+
+<div class="stepwizard">
+    <div class="stepwizard-row setup-panel">
+        <div class="stepwizard-step">
+            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+            <p>Step 1</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+            <p>Step 2</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+            <p>Step 3</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- FORM STARTS -->
+<form role="form"> 
+
+    <div class="container">
+    <div class="row">
+        
+   
+
+                        <!-- <div class="col-md-12 top-10">
+                            <br>
+                            <p>Place a call to order, <a href="tel:01-550555">please call 01-550555</a></p>
+                        </div> -->
+    </div><!-- end row -->
+</div>   <!-- oder place call container close -->
+
+    <div class="row setup-content" id="step-1">
+        <div class="col-xs-12">
+            <div class="col-md-12">
+
+                <h3> User Detail</h3>
+
+                <div class="form-group">
+                    <label class="control-label">First Name </label>
+                    <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name"  >
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Last Name</label>
+                    <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" >
+                </div>
+
+                 <div class="form-group">
+                    <label class="control-label"> Delivery Address</label>
+                    <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Delivery Address"  >
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Phone no </label>
+                    <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter  phone number with Area code"  >
+                </div>
+                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row setup-content" id="step-2">
+        <div class="col-xs-12">
+            <div class="col-md-12">
+                <h3> Customize Detail</h3>
+                <div class="form-group">
+                    <label class="control-label">Description</label>
+                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Description for the Art to customize" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Upload</label>
+                    <input maxlength="200" type="text"  class="form-control" placeholder="Kindly Upload the sample if you have" >
+                    <button class="btn  btn-primary btn-default">Browse</button>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label class="control-label">Budget</label>
+                    <input maxlength="200" type="text"  class="form-control" placeholder="Feel free to give your Budget range">
+                    
+                </div>
+                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content" id="step-3">
+        <div class="col-xs-12">
+            <div class="col-md-12">
+                <h3> Order Detail</h3>
+
+										
+								        <div class="modal-body">
+								            <p> Saskshi Shrestha<br>
+                                             Dhulikhel,Kathmandu university Girl's Hostel<br>
+                                             +977-9823212121<br></p>
+								                Genre : Water color Paint<br>
+											<p> Description: My art should include Mountain and below mountain it should have river.In the bay of river there should bench and one girl should be staying there.She facing himalays and is coding.<br></p>
+											Dimension: 17.5" x 13.5" Inch<br>
+											My budget: Rs.2000- Rs.5000<br>
+
+
+								        </div>
+								        
+
+                    <div class="row"> <!--  hide this and all belows come down -->
+                   <div class="col-md-4">
+
+                <button type="button" class="btn btn-primary  btn-lg btn-brand btn-full-width  pull-right"" data-toggle="modal" data-target="#myModal">Order</button>
+
+  <!-- Modal  conform buy button-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Imagination is what makes life sustain</h4>
+        </div>
+        <div class="modal-body">
+
+          <center>Imagination is what makes life sustain and thank for for giving your imaginative scenario to our artist.
+            <br>We will soon reach out to you <br> to give your imaginative creation a physical form .</center>
+
+            <center>Team : Art Sansar</center>
+
+
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-default" data-dismiss="modal">Sure</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+                <!-- <button class="btn btn-success btn-lg pull-right" type="submit">Order!</button> -->
+            </div>
+        </div>
+    </div>
+</form>
+
+
+</div>
+
+
+<div class="container">
+	<div class="row">
+		
+   
+
+ 						<
+	</div><!-- end row -->
+</div>	 <!-- oder place call container close -->
+
+</div>
+</form>
+
+                        <div class="col-md-12 top-10">
+                            <br>
+                            <p>Place a call to order, <a href="tel:01-550555">please call 01-550555</a></p>
+                        </div>
+</div>
+
+</body>
+
+
+<!-- Footer -->
+<footer class="text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3">
+                <h5>About</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <p class="mb-0">
+                    Art Sansaar<br>
+                    Connecting Local Artist and Art Lover 
+                </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <h5>Informations</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Policy</a></li>
+                    <li><a href="">Copyright </a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                <h5>Others links</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                </ul>
+            </div> -->
+
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h5>Contact</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-home mr-2"></i> Art Sansar</li>
+                    <li><i class="fa fa-envelope mr-2"></i> art@artsansar.com</li>
+                    <li><i class="fa fa-phone mr-2"></i> +977- 9849-111-111</li>
+                    <li><i class="fa fa-print mr-2"></i> + 01-550555</li>
+                </ul>
+            </div>
+            
+            <div class="col-12 copyright mt-3">
+                <p class="float-left">
+                    <a href="#">Back to top</a>
+                </p>
+
+                <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="Forte Nepal"><i>Forte Nepal</i></a> | <span>Art Sansar &#169 2018 </span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

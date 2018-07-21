@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart | Art Sansar</title>
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="artCss/styleArtsansar.css">
+  <link rel="stylesheet" type="text/css" href="/style/artistofweek.css"> <!-- for artistof week css -->
+  <link rel="stylesheet" type="text/css" href="artistWeek.css">
+
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="cart.css">
+<!------ Include the above in your HEAD tag ---------->
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+
+
+	<header class="row">
+
+    <div class="col-md-4">
+      <h3> Sakshi Sansar</h3>
+    </div>
+<!-- above search right side -->
+
+
+    <div class= "col-md-4">
+      <form action="/hms/accommodations" method="GET"> 
+        <div class="row">
+         <!--  <div class="col-xs-12 col-md-4"> -->
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search here.." id="txtSearch"/>
+              <div class="input-group-btn">
+                <button class="btn btn-primary" type="submit">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div>
+            </div>
+         <!--  </div> -->
+        </div>
+      </form>
+    </div>
+<!--     above search box -->
+
+
+
+  <div class= "col-md-4 " >
+
+  <ul class= "nav navbar-nav  navbar-right" >
+    
+        <li id="noeffect"> <a href="#" style="color:white"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li id="noeffect"><a href="#" style="color:white"><span class="glyphicon glyphicon-sign-up"></span> Sign Up</a></li>
+        <li id="noeffect"><a href="#" style="color:white"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+</ul>
+        </div>
+
+ </header>
+
+
+ <!-- Start Header Navigation -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <!-- <a class="navbar-brand" href="#brand"><img src="#" class="logo" alt=""></a >-->
+        </div>
+        <!-- End Header Navigation -->
+
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="home.html">Home</a></li>                    
+                <li><a href="artist.html">Artist</a></li>
+
+
+                    <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Catagories <b class="caret"></b></a>
+
+                    <ul class="dropdown-menu" >
+                        <li><a href="painting.html" >Painting</a></li>
+                        <li><a href="sketching.html">Sketching</a></li>
+                        <li><a href="papercrafts.html">Paper Crafts</a></li>
+                    </ul>
+                </li>
+                <li><a href="customizeArt.html">Customized Art</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+
+
+
+        </div><!-- /.navbar-collapse -->
+    </div>   
+
+</nav>
+
+
+
+
+
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">MY  CART</h1>
+     </div>
+</section>
+
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col"> </th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Available</th>
+                            <th scope="col" class="text-center">Quantity</th>
+                            <th scope="col" class="text-right">Price</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="himalayanArt.jpg" style="width: 25%" > </td>
+                            <td>Himalayan Mesmerizing </td>
+                            <td>In stock</td>
+                            <td><input class="form-control" type="text" value="1" ></td>
+                            <td class="text-right">Rs.5000.00 <td>
+                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img5.jpeg" style="width: 25%"> </td>
+                            <td>Nyathapole</td>
+                            <td>In stock</td>
+                            <td><input class="form-control" type="text" value="1" ></td>
+                            <td class="text-right">Rs.20000.00</td>
+                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img6.jpeg" style="width: 25%"> </td>
+                            <td>Durbar square</td>
+                            <td>In stock</td>
+                            <td><input class="form-control" type="text" value="1" ></td>
+                            <td class="text-right">Rs.7000.00 </td>
+                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Sub-Total</td>
+                            <td class="text-right">Rs.32000.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Shipping</td>
+                            <td class="text-right">Rs.200</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>Total</strong></td>
+                            <td class="text-right"><strong>Rs.32200.00</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col mb-2">
+            <div class="row">
+                <div class="col-sm-12  col-md-6">
+                    <a href="home.html"><button class="btn btn-primary btn-lg btn-block" >Continue Shopping</button></a>
+                </div>
+                <div class="col-sm-12 col-md-6 text-right">
+                    <a href="home.html"><button class="btn btn-primary btn-lg btn-block text-uppercase">Checkout</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3">
+                <h5>About</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <p class="mb-0">
+                    Art Sansaar<br>
+                    Connecting Local Artist and Art Lover 
+                </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <h5>Informations</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Policy</a></li>
+                    <li><a href="">Copyright </a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                <h5>Others links</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                </ul>
+            </div> -->
+
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h5>Contact</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-home mr-2"></i> Art Sansar</li>
+                    <li><i class="fa fa-envelope mr-2"></i> art@artsansar.com</li>
+                    <li><i class="fa fa-phone mr-2"></i> +977- 9849-111-111</li>
+                    <li><i class="fa fa-print mr-2"></i> + 01-550555</li>
+                </ul>
+            </div>
+            
+            <div class="col-12 copyright mt-3">
+                <p class="float-left">
+                    <a href="#">Back to top</a>
+                </p>
+
+                <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="Forte Nepal"><i>Forte Nepal</i></a> | <span>Art Sansar &#169 2018 </span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- <footer class="text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3">
+                <h5>About</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <p class="mb-0">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+                </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <h5>Informations</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                <h5>Others links</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h5>Contact</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-home mr-2"></i> My company</li>
+                    <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
+                    <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
+                    <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
+                </ul>
+            </div>
+            
+            <div class="col-12 copyright mt-3">
+                <p class="float-left">
+                    <a href="#">Back to top</a>
+                </p>
+                <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="Forte Nepal"><i>Forte Nepal</i></a> | <span>Art Sansar &#169 2018 </span></p>
+            </div>
+        </div>
+    </div>
+</footer> -->
+</body>
+</html>

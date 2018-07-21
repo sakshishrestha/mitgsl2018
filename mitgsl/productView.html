@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Detail</title>
+
+	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="artCss/styleArtsansar.css">
+  <link rel="stylesheet" type="text/css" href="/style/artistofweek.css"> <!-- for artistof week css -->
+  <link rel="stylesheet" type="text/css" href="artistWeek.css">
+
+<!-- <revieew -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="cart.css">
+
+
+
+<!-- review close -->
+
+	<link 
+ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+ rel="stylesheet"
+integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+ crossorigin="anonymous">
+ <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'> 
+
+
+
+
+
+
+
+
+
+ <style> 
+ .monospaced{
+ 	font-family: "Ubuntu Mono",monospaced;
+ }
+
+ .add-to-cart .btn-qty {
+  width: 52px;
+  height: 46px;
+}
+
+
+.add-to-cart .btn { border-radius: 0; }
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+	<header class="row">
+
+    <div class="col-md-4">
+      <h3> Art  Sansar</h3>
+    </div>
+<!-- above search right side -->
+
+
+    <div class= "col-md-4">
+      <form action="/hms/accommodations" method="GET"> 
+        <div class="row">
+         <!--  <div class="col-xs-12 col-md-4"> -->
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search here.." id="txtSearch"/>
+              <div class="input-group-btn">
+                <button class="btn btn-primary" type="submit">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div>
+            </div>
+         <!--  </div> -->
+        </div>
+      </form>
+    </div>
+<!--     above search box -->
+
+
+
+  <div class= "col-md-4 " >
+
+  <ul class= "nav navbar-nav  navbar-right" >
+    
+        <li id="noeffect"> <a href="#" style="color:white"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li id="noeffect"><a href="#" style="color:white"><span class="glyphicon glyphicon-sign-up"></span> Sign Up</a></li>
+        <li id="noeffect"><a href="cart.html" style="color:white"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+</ul>
+        </div>
+
+ </header>
+
+
+ <!-- Start Header Navigation -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <!-- <a class="navbar-brand" href="#brand"><img src="#" class="logo" alt=""></a >-->
+        </div>
+        <!-- End Header Navigation -->
+
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="home.html">Home</a></li>                    
+                <li><a href="artist.html">Artist</a></li>
+
+
+                    <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Catagories <b class="caret"></b></a>
+
+                    <ul class="dropdown-menu" >
+                        <li><a href="painting.html" >Painting</a></li>
+                        <li><a href="sketching.html">Sketching</a></li>
+                        <li><a href="papercrafts.html">Paper Crafts</a></li>
+                    </ul>
+                </li>
+                <li><a href="customize.html">Customized Art</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+
+
+
+        </div><!-- /.navbar-collapse -->
+    </div>   
+
+</nav>
+
+
+
+<!-- product detail two column comes here -->
+
+
+<div class="container" id="product-section">
+	<div class="row">
+
+		<div class="col-md-6">
+
+				
+			<!-- <p>prodcut image</p> -->
+			<img src="himalayanArt.jpg" alt="Himalaya Mesmarize by Sakshi" class="image-responsive" style="width: 95%">
+   
+
+						 
+
+
+
+		</div>	
+
+		
+
+
+
+
+
+		<div class="col-md-6">
+			<div class="row">
+					<!-- <div class="col-md-6">
+ 						<div class="row"> -->
+  							<div class="col-md-12">
+   								<h2>Himalayan Mesmerizing</h2>
+                   <div class="col-md-3">
+                    <span class="sr-only">Four out of Five Stars</span> 
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                
+             </div>
+							 </div>
+						<!-- </div>< --><!-- end row-->
+
+					<!-- <div class="row"> -->
+						 <div class="col-md-12">
+							  <span>Art Id.</span>
+							  <span class="monospaced">No. 1960140180</span>
+						 </div>
+					<!-- </div> --><!-- end row -->	
+
+					<!-- <div class="row"> -->
+						 <div class="col-md-12">
+						  			<p class="description">
+						  				<strong>Genre : Water color Paint<br>
+						  				Artist name : <a href="shankar.html">Shankar Shrestha</a><br>
+									    Dimension: 17.5" x 13.5" Inch<br></strong>
+									     <!-- hardwoods, welded steel, acrylic, hand-carved, gold and silver leaf gilt, and marquetry -->
+											<div class="form-group">
+											 <strong>Framing:</strong><!--  <label for="sel1">Framing</label> -->
+											  <select class="form-control" id="sel1">
+											    <option> Hardwood</option>
+											    <option>Welded steel</option>
+											    <option>Hand-carved</option> 
+											     <option>Gold and Silver leaf gilt</option> 
+											    <option>Framing  is not good for this creation</option>
+											  </select>
+											</div>  
+
+
+									    
+
+									   <!-- Has a 2&frac14; x 3&frac14; inch image size. -->
+									  </p>
+						 </div>
+					<!-- </div> --><!-- end row -->
+
+					<!-- <div class="row"> -->
+						 
+
+						
+					<!-- </div> --><!-- end row -->
+<!-- 
+ 		            <div class="row"> -->
+			<div class="col-md-6 bottom-rule">
+						  <h4 class="product-price">Price : RS.5000.00</h4><br>
+			</div>
+					<!-- /div>  -->  <!-- end row -->
+
+				<!-- 	<div class=" add-to-cart">
+					    <div class="col-md-6 product-qty">
+							  <span class="btn btn-default btn-lg btn-qty">
+							   			<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+					  			</span>
+					  			<input class="btn btn-default btn-lg btn-qty" value="1" />
+					  				<span class="btn btn-default btn-lg btn-qty">
+					   					<span class="glyphicon glyphicon-minus" aria-hidden="true"></span> <br>
+					 				</span>
+					 	</div>
+
+					</div> -->
+			</div> 	
+
+
+          <div class="row"> <!--  hide this and all belows come down -->
+				   <div class="col-md-4">
+
+				<button type="button" class="btn btn-primary  btn-lg btn-brand btn-full-width " data-toggle="modal" data-target="#myModal">Buy Now</button>
+
+  <!-- Modal  conform buy button-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Thank you for making Artist Recognized</h4>
+        </div>
+        <div class="modal-body">
+          <STRONG>Detail</STRONG>
+          <center><h3>Himalayan Mesmerizing</h3></center>
+          <p>Genre : Water color Paint<br>
+			Artist name : Shankar Shrestha<br>
+			Dimension: 17.5" x 13.5" Inch<br>
+			Price: Rs.5000.00<br>
+
+
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-default" data-dismiss="modal">Sure</button>
+          <button type="button" class="btn  btn-primary btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  						
+ 				</div>	 
+
+ 				<div class="col-md-4">
+  						<a href="cart.html"> <button class="btn btn-primary  btn-lg btn-brand btn-full-width">
+   							Add to Cart
+  						</button><a>
+ 				</div>
+
+
+ 		<!-- end row -->
+
+					<!-- <div class="row">
+								 <div class="col-md-4 text-center">
+								  			<span class="monospaced">In Stock</span>
+								 </div>
+						<div class="col-md-4 col-md-offset-1 text-center">
+								 		 <a class="monospaced" href="#">Add to Shopping List</a>
+						</div>
+					</div> -->   <!-- end row -->
+<!-- 
+			<div class="row">
+ 				<div class="col-md-12 bottom-rule top-10">
+ 					sfcasfsd
+ 				</div>
+			</div> -->    <!-- end row -->
+
+					<div class="row">
+
+ 						<div class="col-md-12 top-10">
+ 							<br>
+  							<p>To order by telephone, <a href="tel:01-550555">please call 01-550555</a></p>
+ 						</div>
+					</div><!-- end row -->
+
+
+
+						<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+ <li role="presentation" class="active">
+  <a href="#description"
+   aria-controls="description"
+   role="tab"
+   data-toggle="tab"
+  >Description</a>
+ </li>
+ <!-- <li role="presentation">
+  <a href="#features"
+   aria-controls="features"
+   role="tab"
+   data-toggle="tab"
+  >Features</a>
+ </li> -->
+ <!-- <li role="presentation">
+  <a href="#notes"
+   aria-controls="notes"
+   role="tab"
+   data-toggle="tab"
+   >Notes</a>
+ </li> -->
+ <li role="presentation">
+  <a href="#reviews"
+   aria-controls="reviews"
+   role="tab"
+   data-toggle="tab"
+  >Reviews</a>
+ </li>
+</ul>
+
+
+	
+<!-- Tab panes -->
+<div class="tab-content">
+ <div role="tabpanel" class="tab-pane active" id="description">
+  <p class="top-10">
+   <p> ― Susan Jagannath, Chasing Himalayan Dreams</p> 	 
+   <blockquote cite="https://www.goodreads.com/quotes/tag/himalayas">
+   	The Himalayas are a holy land, dotted with sacred lakes, divine peaks and blue glaciers that gleam and soar in the collective imagination of the sub-continent.It is the mountain that has been calling me, and it’s time to answer.I want to gaze at the Five Treasures of Snows; Kanchenjunga, that rears up like a frozen wave of ice.
+   	
+   </blockquote>  
+
+ </p>
+ 
+ </div>
+
+ <div role="tabpanel" class="tab-pane top-10" id="reviews">
+      <p class="top-10">
+  	   	<div class="col-md-4">
+								  <span class="sr-only">Four out of Five Stars</span>
+								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+								  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+								  <span class="label label-success">61</span>
+						 </div>
+
+
+<!--    Reviews  -->
+
+    
+			 <div class="container">
+				<div class="row" style="margin-top:40px;">
+					<div class="col-md-6">
+			    	<div class="well well-sm">
+			            <div class="text-right">
+			                <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a>
+			            </div>
+			        
+			            <div class="row" id="post-review-box" style="display:none;">
+			                <div class="col-md-12">
+			                    <form accept-charset="UTF-8" action="" method="post">
+			                        <input id="ratings-hidden" name="rating" type="hidden"> 
+			                        <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+			        
+			                        <div class="text-right">
+			                            <div class="stars starrr" data-rating="0"></div>
+			                            <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
+			                            <span class="glyphicon glyphicon-remove"></span>Cancel</a>
+			                            <button class="btn btn-success btn-lg" type="submit">Save</button>
+			                        </div>
+			                    </form>
+			                </div>
+			            </div>
+			        </div> 
+			         
+					</div>
+				</div>
+			  </div>
+									
+     </p>
+			 
+ </div>
+ <!-- <div role="tabpanel" class="tab-pane" id="notes">
+  ...
+ </div>
+ <div role="tabpanel" class="tab-pane" id="features">
+  ...
+ </div>
+</div>
+ -->
+    </div>
+
+
+	</div>	<!-- row ending -->
+
+
+
+<!-- related arts -->
+
+    <div class="container">
+      <div>
+        <h1> Related Creations  </h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <span class="image-gallery">
+            <img src="img1.jpeg" class="img-responsive thumbnail"  >
+            <div class="overlay">Bloom art</div>
+          </span>
+        </div>
+        <div class="col-sm-3"> 
+         <span class="image-gallery">     
+          <img src="img2.jpeg" class="img-responsive thumbnail"  >
+          <div class="overlay">spiral art</div>
+        </span>
+      </div>
+      <div class="col-sm-3"> 
+        <span class="image-gallery">
+          <img src="img3.jpeg" class="img-responsive thumbnail"  >
+
+
+
+
+
+          <div class="overlay">krishan radha</div>
+        </span>
+      </div>
+
+      <div class="col-sm-3">
+        <span class="image-gallery ">
+          <a href="productView.html"><img src="himalayanArt.jpg" class="img-responsive thumbnail"></a>
+
+          <div class="overlay">Natural art</div>
+        </span>
+      </div>
+
+
+      <div class="col-sm-3">
+        <span class="image-gallery">
+          <img src="img5.jpeg" class="img-responsive thumbnail"  alt="Image">
+
+
+
+          <div class="overlay">design</div>
+        </span>
+      </div>
+      <div class="col-sm-3"> 
+        <span class="image-gallery">
+          <img src="img6.jpeg" class="img-responsive thumbnail"  >
+
+
+          <div class="overlay">oil art </div>
+        </span>
+      </div>
+      <div class="col-sm-3"> 
+        <span class="image-gallery">
+          <img src="img1.jpeg" class="img-responsive thumbnail"  >
+
+          <div class="overlay">bloom art</div>
+        </span>
+      </div>
+      <div class="col-sm-3">
+        <span class="image-gallery">
+          <img src="img2.jpeg" class="img-responsive thumbnail"  ></span>
+          <div class="overlay">spiral art</div>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+</a>
+</a>
+</div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3">
+                <h5>About</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <p class="mb-0">
+                    Art Sansaar<br>
+                    Connecting Local Artist and Art Lover 
+                </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <h5>Informations</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Policy</a></li>
+                    <li><a href="">Copyright </a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                <h5>Others links</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                </ul>
+            </div> -->
+
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h5>Contact</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-home mr-2"></i> Art Sansar</li>
+                    <li><i class="fa fa-envelope mr-2"></i> art@artsansar.com</li>
+                    <li><i class="fa fa-phone mr-2"></i> +977- 9849-111-111</li>
+                    <li><i class="fa fa-print mr-2"></i> + 01-550555</li>
+                </ul>
+            </div>
+            
+            <div class="col-12 copyright mt-3">
+                <p class="float-left">
+                    <a href="#">Back to top</a>
+                </p>
+
+                <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="Forte Nepal"><i>Forte Nepal</i></a> | <span>Art Sansar &#169 2018 </span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- 
+
+<footer class="container-fluid text-center">
+  <p> Art Sansar &#169 2018 </p>
+
+
+            <div class="col-12 copyright mt-3">
+                <p class="float-left">
+                    <a href="#">Back to top</a>
+                </p>
+                <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="Forte Nepal"><i>Forte Nepal</i></a> | <span>Art Sansar &#169 2018 </span></p>
+            </div>
+</footer> 
+
+
+ -->
+
+
+<!-- 
+</div> -->	<!-- container ending -->
+
+
+
+
+<script 
+     src="https://code.jquery.com/jquery-2.2.2.min.js" 
+     integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" 
+     crossorigin="anonymous"></script>
+ <script 
+     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+     crossorigin="anonymous"></script>
+<script src="/artjs/writeReviews.js"></script>
+
+
+
+</body>
+</html>
